@@ -36,7 +36,7 @@ of isEndOfMonth() without refactoring.
 
 # Refactoring Successfully Covers Branches:
 
-![Refactoring Success](assets/refactoring_success.png)
+![Refactoring Success](assets/refactored_success.png)
 
 # Date Coverage = 100%:
 

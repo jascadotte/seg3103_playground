@@ -22,7 +22,7 @@ This was the initial code I recieved, with a 91% coverage.
 
 # Date Coverage = 95%:
 
-![Date Coverage = 95%](date_coverage95.png)
+![Date Coverage = 95%](assets/date_coverage95.png)
 
 ![isEndOfMonth Coverage @ 95%](assets/isendofmonth_95.png)
 

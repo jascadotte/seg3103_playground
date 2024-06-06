@@ -110,6 +110,32 @@ class DateTest {
   }
 
   @Test
+  void nextDate_tc16() {
+    Date today = new Date(2000, 2, 29);
+    Date expectedTomorrow = new Date(2000, 3, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_tc17() {
+    Date today = new Date(2000, 9, 30);
+    Date expectedTomorrow = new Date(2000, 10, 1);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void dateEquals() {
+    Date date1 = new Date(2024,6,6);
+    Date date2 = new Date(2024,6,6);
+    assertTrue(date1.equals(date2));
+  }
+
+  @Test
+  void testToString() {
+    assertEquals("2024/June/6", (new Date(2024, 6, 6)).toString());
+  }
+
+  @Test
   void nextDate_invalid_tc16() {
     assertThrows(
       IllegalArgumentException.class,
@@ -147,6 +173,41 @@ class DateTest {
       IllegalArgumentException.class,
       () -> new Date(1975, 6, -50)
     );
+  }
+
+  @Test
+  void dateEquals_invalid() {
+    Date date1 = new Date(2024,6,6);
+    Date date2 = new Date(2024,7,6);
+    assertFalse(date1.equals(date2));
+  }
+
+  @Test
+  void dateEquals_invalid_object() {
+    Date date1 = new Date(2024,6,6);
+    String date2 = "2024, 6, 6";
+    assertFalse(date1.equals(date2));
+  }
+
+  @Test
+  void dateEquals_false1() {
+    Date date1 = new Date(2024,6,6);
+    Date date2 = new Date(2025,7,14);
+    assertFalse(date1.equals(date2));
+  }
+
+  @Test
+  void dateEquals_false2() {
+    Date date1 = new Date(2024,6,6);
+    Date date2 = new Date(2024,6,14);
+    assertFalse(date1.equals(date2));
+  }
+
+  @Test
+  void dateEquals_false3() {
+    Date date1 = new Date(2024,6,6);
+    Date date2 = new Date(2023,6,6);
+    assertFalse(date1.equals(date2));
   }
 
 }

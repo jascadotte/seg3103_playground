@@ -9,7 +9,10 @@ public class Fuzzymath {
 
   public static int dif(int a, int b) {
 
-    return 0;
+    int dif = a - b;
+    dif = dif - FUZZ_FACTOR;
+
+    return dif;
   }
 
 

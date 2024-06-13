@@ -19,7 +19,11 @@ public class Fuzzymath {
 
   public static int quot(int a, int b) {
 
-    return 0;
+    int quot = a / b;
+    quot = quot - FUZZ_FACTOR;
+
+    return quot;
+
   }
 
 

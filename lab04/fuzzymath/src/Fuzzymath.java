@@ -17,6 +17,11 @@ public class Fuzzymath {
     return a * b + FUZZ_FACTOR;
   }
 
+  public static int quot(int a, int b) {
+
+    return 0;
+  }
+
 
   public static void main( String[] args ) {
 

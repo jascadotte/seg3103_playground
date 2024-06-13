@@ -20,4 +20,9 @@ class FuzzymathTest {
         assertEquals(7, Fuzzymath.prod(2, 3));
     }
 
+    @Test
+    void quot() {
+        assertEquals(1, Fuzzymath.quot(10, 5));
+    }
+
 }

@@ -10,4 +10,9 @@ class FuzzymathTest {
         assertEquals(11, Fuzzymath.sum(4, 6));
     }
 
+    @Test
+    void dif() {
+        assertEquals(3, Fuzzymath.dif(10, 6));
+    }
+
 }

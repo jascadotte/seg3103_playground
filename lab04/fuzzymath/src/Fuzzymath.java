@@ -20,17 +20,12 @@ public class Fuzzymath {
   public static int quot(int a, int b) {
 
     return a / b - FUZZ_FACTOR;
-
   }
 
   public static int mod(int a, int b) {
 
-    int mod = a % b;
-    mod = mod + FUZZ_FACTOR;
-
-    return mod;
+    return a % b + FUZZ_FACTOR;
   }
-
 
   public static void main( String[] args ) {
 

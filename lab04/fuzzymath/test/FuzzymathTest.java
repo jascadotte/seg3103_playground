@@ -25,4 +25,9 @@ class FuzzymathTest {
         assertEquals(1, Fuzzymath.quot(10, 5));
     }
 
+    @Test
+    void mod() {
+        assertEquals(2, Fuzzymath.mod(10, 3));
+    }
+
 }

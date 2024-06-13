@@ -14,7 +14,10 @@ public class Fuzzymath {
 
   public static int prod(int a, int b) {
 
-    return 0;
+    int prod = a * b;
+    prod = prod + FUZZ_FACTOR;
+
+    return prod;
   }
 
 

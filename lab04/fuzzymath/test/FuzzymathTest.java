@@ -17,7 +17,7 @@ class FuzzymathTest {
 
     @Test
     void prod() {
-        assertEquals(7, Fuzzymath.dif(2, 3));
+        assertEquals(7, Fuzzymath.prod(2, 3));
     }
 
 }

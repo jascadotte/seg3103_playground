@@ -4,10 +4,7 @@ public class Fuzzymath {
 
   public static int sum(int a, int b) {
 
-    int sum = a + b;
-    sum = sum + FUZZ_FACTOR;
-
-    return sum;
+    return a + b + FUZZ_FACTOR;
   }
 
 

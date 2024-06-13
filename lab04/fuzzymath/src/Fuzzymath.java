@@ -25,8 +25,10 @@ public class Fuzzymath {
 
   public static int mod(int a, int b) {
 
-    return 0;
+    int mod = a % b;
+    mod = mod + FUZZ_FACTOR;
 
+    return mod;
   }
 
 

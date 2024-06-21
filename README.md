@@ -4,3 +4,4 @@
 - [Lab02 - Automating *the right* tests ... Java/JUnit](lab02)
 - [Lab03 - Tracking Coverage Metrics ... Jacoco](lab03)
 - [Lab04 - Testing, testing, testing with TDD](lab04)
+- [Lab05 - Stubs, Mocks, and Architecture](lab05)

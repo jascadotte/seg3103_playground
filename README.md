@@ -5,3 +5,4 @@
 - [Lab03 - Tracking Coverage Metrics ... Jacoco](lab03)
 - [Lab04 - Testing, testing, testing with TDD](lab04)
 - [Lab05 - Stubs, Mocks, and Architecture](lab05)
+- [Lab06 - Automated User Acceptance Testing with Selenium WebDriver](lab06)

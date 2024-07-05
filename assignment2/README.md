@@ -10,8 +10,8 @@
 
 ## Simplified Control Flow Graph
 
-![Graph](assets/graphp1.png)
-![Graph](assets/graphp2.png)
+![Graph1](assets/graphp1.png)  
+![Graph2](assets/graphp2.png)
 
 ## Whitebox Test Table
 

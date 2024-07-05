@@ -21,6 +21,10 @@ defmodule Grades.Calculator do
     |> Enum.count()
   end
 
+  def avg_exams(midterm, final) do
+    (midterm + final) / 2
+  end
+
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
@@ -32,7 +36,7 @@ defmodule Grades.Calculator do
   def letter_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
-    avg_exams = (midterm + final) / 2
+    avg_exams = avg_exams(midterm, final)
     num_labs = number_of_labs(labs)
 
     if failed_to_participate(avg_homework, avg_exams, num_labs) do
@@ -59,7 +63,7 @@ defmodule Grades.Calculator do
   def numeric_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework = avg(homework)
     avg_labs = avg(labs)
-    avg_exams = (midterm + final) / 2
+    avg_exams = avg_exams(midterm, final)
     num_labs = number_of_labs(labs)
 
     if failed_to_participate(avg_homework, avg_exams, num_labs) do

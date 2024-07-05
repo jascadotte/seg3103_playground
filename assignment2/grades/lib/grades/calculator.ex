@@ -1,37 +1,23 @@
 defmodule Grades.Calculator do
-  def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-    avg_homework =
-      if Enum.count(homework) == 0 do
-        0
-      else
-        Enum.sum(homework) / Enum.count(homework)
-      end
+  def avg(grades) do
+    if Enum.count(grades) == 0 do
+      0
+    else
+      Enum.sum(grades) / Enum.count(grades)
+    end
+  end
 
-    avg_labs =
-      if Enum.count(labs) == 0 do
-        0
-      else
-        Enum.sum(labs) / Enum.count(labs)
-      end
+  def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
+    avg_homework = avg(homework)
+    avg_labs = avg(labs)
 
     mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
     round(mark * 100)
   end
 
   def letter_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-    avg_homework =
-      if Enum.count(homework) == 0 do
-        0
-      else
-        Enum.sum(homework) / Enum.count(homework)
-      end
-
-    avg_labs =
-      if Enum.count(labs) == 0 do
-        0
-      else
-        Enum.sum(labs) / Enum.count(labs)
-      end
+    avg_homework = avg(homework)
+    avg_labs = avg(labs)
 
     avg_exams = (midterm + final) / 2
 
@@ -62,19 +48,8 @@ defmodule Grades.Calculator do
   end
 
   def numeric_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-    avg_homework =
-      if Enum.count(homework) == 0 do
-        0
-      else
-        Enum.sum(homework) / Enum.count(homework)
-      end
-
-    avg_labs =
-      if Enum.count(labs) == 0 do
-        0
-      else
-        Enum.sum(labs) / Enum.count(labs)
-      end
+    avg_homework = avg(homework)
+    avg_labs = avg(labs)
 
     avg_exams = (midterm + final) / 2
 

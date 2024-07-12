@@ -6,5 +6,5 @@
 - [Lab04 - Testing, testing, testing with TDD](lab04)
 - [Lab05 - Stubs, Mocks, and Architecture](lab05)
 - [Lab06 - Automated User Acceptance Testing with Selenium WebDriver](lab06)
-
 - [Assignment #2 - White Box Testing & Refactoring](assignment2)
+- [Lab07 - Automated Static Analysis with SpotBugs](lab07)

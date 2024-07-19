@@ -9,8 +9,5 @@
         <module name="mutation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mutation" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

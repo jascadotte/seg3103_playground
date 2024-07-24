@@ -1,0 +1,10 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,StringCompare/CompareString.compareUsingCompareTo
+inline,StringCompare/CompareString.compareUsingContentEquals
+inline,StringCompare/CompareString.compareUsingEqualSign
+inline,StringCompare/CompareString.compareUsingEquals
+inline,StringCompare/CompareString.compareUsingcompareToIgnoreCase

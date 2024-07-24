@@ -1,0 +1,5 @@
+JMH S 27 StringCompare.CompareString S 71 StringCompare.jmh_generated.CompareString_compareUsingCompareTo_jmhTest S 21 compareUsingCompareTo S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 StringCompare.CompareString S 75 StringCompare.jmh_generated.CompareString_compareUsingContentEquals_jmhTest S 25 compareUsingContentEquals S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 StringCompare.CompareString S 71 StringCompare.jmh_generated.CompareString_compareUsingEqualSign_jmhTest S 21 compareUsingEqualSign S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 StringCompare.CompareString S 68 StringCompare.jmh_generated.CompareString_compareUsingEquals_jmhTest S 18 compareUsingEquals S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 StringCompare.CompareString S 81 StringCompare.jmh_generated.CompareString_compareUsingcompareToIgnoreCase_jmhTest S 31 compareUsingcompareToIgnoreCase S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 

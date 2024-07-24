@@ -9,3 +9,5 @@
 - [Assignment #2 - White Box Testing & Refactoring](assignment2)
 - [Lab07 - Automated Static Analysis with SpotBugs](lab07)
 - [Lab08 - Mutation Testing](lab08)
+- [Assignment #3 - Bookstore Testing](assignment3)
+- [Lab09 - Java Microbenchmark Harness (JMH)](lab09)
